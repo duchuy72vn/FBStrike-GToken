@@ -1,0 +1,17 @@
+{
+  "name": "fbstrike-gtoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fbstrike-gtoken.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "j2url": "^1.0.1",
+    "python-shell": "^2.0.2"
+  }
+}
