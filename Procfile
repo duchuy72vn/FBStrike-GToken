@@ -1,0 +1,1 @@
+web: node fbstrike-gtoken.js
