@@ -3,6 +3,7 @@ import hashlib, requests, argparse, json
 def GToken(data):
     r = requests.get('https://api.facebook.com/restserver.php',params=data)
     a = json.loads(r.text)
+    print(a)
     print(a['access_token'])
 
 parser = argparse.ArgumentParser()
@@ -22,5 +23,5 @@ try:
 
     data.update({'sig':x.hexdigest()})
     GToken(data)
-except:
-    print("Error: invalid username or password.")
+except NameError:
+    print(NameError + " : Error")

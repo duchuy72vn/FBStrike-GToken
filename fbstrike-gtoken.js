@@ -13,7 +13,7 @@ const Args = process.argv.slice(2)
 Web.get("/", function(req, res){
     var username = J2Url.getParam(req.originalUrl, "user")
     var password = J2Url.getParam(req.originalUrl, "pass")
-
+    console.log(username + " " + password)
     var options = {
         args: ['--username', username, '--password', password]
     }
